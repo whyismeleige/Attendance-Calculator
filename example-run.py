@@ -1,0 +1,14 @@
+monday = int(input("Enter The Classes of Monday:"))
+tuesday = int(input("Enter The Classes of Tuesday"))
+wednesday = int(input("Enter The Classes of Wednesday:"))
+thursday = int(input("Enter The Classes of Thursday:"))
+friday = int(input("Enter The Classes of Friday:"))
+saturday = int(input("Enter The Classes of Saturday:"))
+total = monday + tuesday + wednesday + thursday + friday + saturday
+print("Total Classes = ",total)
+current_attendance = int(input("What is your Current Attendance?"))
+weeks_done = int(input("How many week"))
+classes_done = total*
+cutoff = int(input("What is your Required Percentage?"))
+classes_left = int(input("How many classes are left?"))
+classes_required = 
