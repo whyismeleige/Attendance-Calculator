@@ -42,7 +42,8 @@ def calculate_attendance():
     if added_classes > classes_cutoff:
         diff = added_classes - classes_cutoff
         holidays = diff/avg 
-        result_label.config(text = f"No of Holidays you can take {holidays:.2f}")
+        holidays = round(holidays)
+        result_label.config(text = f"No of Holidays you can take {holidays}")
     else:
         result_label.config(text = "Go to All Classes")
     
