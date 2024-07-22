@@ -38,14 +38,16 @@ def calculate_attendance():
     total_classes = today_total_classes + classes_left
     classes_cutoff = (cutoff_required/100) * total_classes
     added_classes = current_classes_attended + classes_left
+    max_attendance = added_classes/total_classes * 100
+
 
     if added_classes > classes_cutoff:
         diff = added_classes - classes_cutoff
         holidays = diff/avg 
         holidays = round(holidays)
-        result_label.config(text = f"No of Holidays you can take {holidays}")
+        result_label.config(text = f"No of Holidays you can take {holidays} \n Maximum Percentage Possible {max_attendance}")
     else:
-        result_label.config(text = "Go to All Classes")
+        result_label.config(text = f"Go to All Classes \n Maximum Percentage Possible {max_attendance}")
     
 root = tk.Tk()
 root.title("Attendance Calculator")
