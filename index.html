@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Attendance Calculator</h1>
+
+        <label for="monday">Enter the Classes of Monday:</label>
+        <input type="number" id="monday" name="monday">
+        <br>
+
+        <label for="tuesday">Enter the Classes of Tuesday:</label>
+        <input type="number" id="tuesday" name="tuesday">
+        <br>
+        <label for="wednesday">Enter the Classes of Wednesday:</label>
+        <input type="number" id="wednesday" name="wednesday">
+        <br>
+        <label for="thursday">Enter the Classes of Thursday:</label>
+        <input type="number" id="thursday" name="thursday">
+        <br>
+        <label for="friday">Enter the Classes of Friday:</label>
+        <input type="number" id="friday" name="friday">
+        <br>
+        <label for="saturday">Enter the Classes of Saturday (Enter 0 if Holiday):</label>
+        <input type="number" id="saturday" name="saturday">
+        <br>
+        <label for="joining_date">Enter your Joining Date (YYYY-MM-DD):</label>
+        <input type="date" id="joining_date" name="joining_date">
+        <br>
+        <label for="end_date">Enter your end date of semester (YYYY-MM-DD):</label>
+        <input type="date" id="end_date" name="end_date">
+        <br>
+        <label for="current_attendance">What is your current attendance (in %)?</label>
+        <input type="number" id="current_attendance" name="current_attendance">
+        <br>
+        <label for="cutoff_required">What percentage is required to write the exam?</label>
+        <input type="number" id="cutoff_required" name="cutoff_required">
+        <br>
+        <button onclick="calculateAttendance()">Calculate</button>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
