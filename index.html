@@ -41,9 +41,17 @@
         <label for="cutoff_required">What percentage is required to write the exam?</label>
         <input type="number" id="cutoff_required" name="cutoff_required">
         <br>
-        <button onclick="calculateAttendance()" class="learn-more" >Calculate</button>
-        <p id="result"></p>
-    </div>
+        <button onclick="calculateAttendance()" class="btn" >
+            <strong>Calculate</strong>
+            <div id="container-stars">
+              <div id="stars"></div>
+            </div>
+            <div id="glow">
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </button>
+          <div id="result" class="results"></div>
     <script src="script.js"></script>
 </body>
 </html>
